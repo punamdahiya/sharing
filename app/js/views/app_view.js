@@ -19,7 +19,7 @@ export default class AppView extends View {
             <h3></h3>
             <h4></h4>
           </div>
-          <gaia-button class="control primary" data-action="download">
+          <gaia-button class="control" data-action="download">
             <span></span>
           </gaia-button>
         </li>

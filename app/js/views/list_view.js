@@ -4,6 +4,7 @@ import 'gaia-list';
 import 'gaia-checkbox';
 import 'gaia-sub-header';
 import 'gaia-loading';
+import 'gaia-button';
 
 export default class ListView extends View {
   constructor(options) {
@@ -84,13 +85,13 @@ export default class ListView extends View {
       return string;
     } else if (this.type === 'download') {
       if (app.installed) {
-        return '<a class="control" disabled>Installed</a>';
+        return '<gaia-button class="control" disabled>Installed</gaia-button>';
       } else {
         string =
-          `<a data-id="${app.manifestURL}" data-action="download"
+          `<gaia-button data-id="${app.manifestURL}" data-action="download"
            class="control">
             Download
-          </a>`;
+          </gaia-button>`;
         return string;
       }
     }

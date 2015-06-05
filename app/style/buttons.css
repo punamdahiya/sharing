@@ -1,3 +1,21 @@
+gaia-button {
+  font-size: 12px !important;
+  height: 30px !important;
+  min-width: 75px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  --button-color: var(--title-color);
+}
+
+gaia-button:not([disabled]) {
+  --button-background: var(--color-blue);
+  --button-box-shadow: none;
+  --button-color: white;
+  --button-background-active: white;
+  --button-box-shadow-active: none;
+  --button-color-active: var(--title-color);
+}
+
 /* Copied from buttons.css in Gaia's BB */
 
 /* ----------------------------------
